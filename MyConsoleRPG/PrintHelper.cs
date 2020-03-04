@@ -116,6 +116,7 @@ namespace MyConsoleRPG
             return charsInLine.Length - 1;
         }
 
+        //打印具备颜色的字符串
         public static void PrintWriteColor(string s,ConsoleColor c)
         {
             ConsoleColor BaseColor = Console.ForegroundColor;
