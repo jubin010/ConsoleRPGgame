@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCardGame", "TheCard\TheCardGame.csproj", "{F72589DD-4C0C-4088-99D1-67BA192D0201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyConsoleRPG", "MyConsoleRPG\MyConsoleRPG.csproj", "{956A9E4E-DD48-46D8-BBDE-327F62D9E599}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F72589DD-4C0C-4088-99D1-67BA192D0201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F72589DD-4C0C-4088-99D1-67BA192D0201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F72589DD-4C0C-4088-99D1-67BA192D0201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{956A9E4E-DD48-46D8-BBDE-327F62D9E599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956A9E4E-DD48-46D8-BBDE-327F62D9E599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956A9E4E-DD48-46D8-BBDE-327F62D9E599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956A9E4E-DD48-46D8-BBDE-327F62D9E599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
