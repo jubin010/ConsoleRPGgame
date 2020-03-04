@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{956A9E4E-DD48-46D8-BBDE-327F62D9E599}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyConsoleRPG</RootNamespace>
+    <AssemblyName>MyConsoleRPG</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="battleScript\global\CardGroup.cs" />
+    <Compile Include="battleScript\global\CardSave.cs" />
+    <Compile Include="battleScript\global\JsonSkill.cs" />
+    <Compile Include="battleScript\card\ManMadeCard.cs" />
+    <Compile Include="battleScript\global\SkillGroup.cs" />
+    <Compile Include="battleScript\skill\GetShield.cs" />
+    <Compile Include="battleScript\skill\BasalAtk.cs" />
+    <Compile Include="battleScript\skill\GetHurt.cs" />
+    <Compile Include="battleScript\skill\GetLing.cs" />
+    <Compile Include="battleScript\global\Card.cs" />
+    <Compile Include="battleScript\global\CardSkill.cs" />
+    <Compile Include="battleScript\card\BasalAtkCard.cs" />
+    <Compile Include="battleScript\card\BaseSwordAtkCard.cs" />
+    <Compile Include="battleScript\skill\PlayCard.cs" />
+    <Compile Include="battleScript\card\LingSwordAtkCard.cs" />
+    <Compile Include="battleScript\card\GiveShieldCard.cs" />
+    <Compile Include="inventoryScript\funbook\SwordShieldFunBook.cs" />
+    <Compile Include="inventoryScript\globle\FunBook.cs" />
+    <Compile Include="inventoryScript\globle\InventoryGroup.cs" />
+    <Compile Include="inventoryScript\globle\InventorySave.cs" />
+    <Compile Include="inventoryScript\weaponScript\ManMadeWeapon.cs" />
+    <Compile Include="inventoryScript\globle\Resource,.cs" />
+    <Compile Include="inventoryScript\resource\stone\FireStone.cs" />
+    <Compile Include="inventoryScript\resource\stone\GoldStone.cs" />
+    <Compile Include="inventoryScript\resource\stone\SoilStone.cs" />
+    <Compile Include="inventoryScript\resource\stone\WaterStone.cs" />
+    <Compile Include="inventoryScript\resource\stone\WoodStone.cs" />
+    <Compile Include="inventoryScript\resource\Wolfskin.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="mapScript\globle\GoWhereScript.cs" />
+    <Compile Include="mapScript\globle\MazeMapScript.cs" />
+    <Compile Include="mapScript\tile\MazeDoorSit.cs" />
+    <Compile Include="mapScript\tile\MazeDownDoor.cs" />
+    <Compile Include="mapScript\tile\MazeLeftDoor.cs" />
+    <Compile Include="mapScript\tile\MazeRightDoor.cs" />
+    <Compile Include="mapScript\map\maze\SouthValleyMazeScript.cs" />
+    <Compile Include="mapScript\globle\MazeTile.cs" />
+    <Compile Include="mapScript\tile\MazeUpDoor.cs" />
+    <Compile Include="mapScript\tile\QuestBaseTile.cs" />
+    <Compile Include="mapScript\tile\StartMapDoorTile.cs" />
+    <Compile Include="mapScript\tile\TestBattleTile.cs" />
+    <Compile Include="questScript\GameQuest.cs" />
+    <Compile Include="questScript\QuestGroup.cs" />
+    <Compile Include="questScript\QuestKill.cs" />
+    <Compile Include="questScript\TestQuest.cs" />
+    <Compile Include="questScript\TestQuest2.cs" />
+    <Compile Include="questScript\TestQuest3.cs" />
+    <Compile Include="roomScript\global\NewGameRoomScript.cs" />
+    <Compile Include="roomScript\global\OldGameRoomScript.cs" />
+    <Compile Include="roomScript\InformationRoom\QuestShopRoomScript.cs" />
+    <Compile Include="roomScript\InformationRoom\GameSelectRoom.cs" />
+    <Compile Include="roomScript\InformationRoom\MapToBattleRoom.cs" />
+    <Compile Include="roomScript\InformationRoom\OutMazeRoomScript.cs" />
+    <Compile Include="roomScript\InformationRoom\QuestInfoRoomScript.cs" />
+    <Compile Include="ShuffleHelper.cs" />
+    <Compile Include="unitScript\NpcUnitGroup.cs" />
+    <Compile Include="Quality.cs" />
+    <Compile Include="roomScript\global\BattleRoomScript.cs" />
+    <Compile Include="inventoryScript\weaponScript\BaseWoodOrcCycle.cs" />
+    <Compile Include="inventoryScript\globle\Equipment.cs" />
+    <Compile Include="functionScript\Function.cs" />
+    <Compile Include="inventoryScript\globle\Inventory.cs" />
+    <Compile Include="roomScript\global\InventorySwitchRoom.cs" />
+    <Compile Include="battleScript\global\Perk.cs" />
+    <Compile Include="roomScript\InformationRoom\InverntoryInfoRoom.cs" />
+    <Compile Include="roomScript\InformationRoom\PlayerInventoryRoom.cs" />
+    <Compile Include="functionScript\GoldBaseFun.cs" />
+    <Compile Include="functionScript\FireBaseFun.cs" />
+    <Compile Include="functionScript\SoilBaseFun.cs" />
+    <Compile Include="unitScript\npc\TestEnemy.cs" />
+    <Compile Include="functionScript\SwordShield.cs" />
+    <Compile Include="unitScript\UnitFunctions.cs" />
+    <Compile Include="inventoryScript\weaponScript\BaseWoodSword.cs" />
+    <Compile Include="roomScript\InformationRoom\UnitInfoRoom.cs" />
+    <Compile Include="inventoryScript\weaponScript\EmptyHanded.cs" />
+    <Compile Include="unitScript\GameUnit.cs" />
+    <Compile Include="PlayerInformation.cs" />
+    <Compile Include="unitScript\PlayerUnit.cs" />
+    <Compile Include="roomScript\InformationRoom\MapMoveRoomScript.cs" />
+    <Compile Include="roomScript\global\MapRoomScript.cs" />
+    <Compile Include="mapScript\globle\MapScript.cs" />
+    <Compile Include="mapScript\globle\MapTile.cs" />
+    <Compile Include="roomScript\InformationRoom\InformationRoomScript.cs" />
+    <Compile Include="PrintHelper.cs" />
+    <Compile Include="roomScript\global\EndRoomScript.cs" />
+    <Compile Include="GameMainRecycle.cs" />
+    <Compile Include="GameRoom.cs" />
+    <Compile Include="KeySelect.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roomScript\global\RoomScript.cs" />
+    <Compile Include="roomScript\global\RoomScriptGroup.cs" />
+    <Compile Include="roomScript\global\StartRoomScript.cs" />
+    <Compile Include="roomScript\story\Story1_1RoomScript.cs" />
+    <Compile Include="mapScript\tile\SouthernDoorTile.cs" />
+    <Compile Include="mapScript\tile\SouthernForestTile.cs" />
+    <Compile Include="mapScript\tile\SouthernSteleTile.cs" />
+    <Compile Include="mapScript\map\StartMapScript.cs" />
+    <Compile Include="mapScript\map\SwordSouthValleyMapScript.cs" />
+    <Compile Include="TheFiveElements.cs" />
+    <Compile Include="unitScript\UnitEquipments.cs" />
+    <Compile Include="inventoryScript\weaponScript\Weapon.cs" />
+    <Compile Include="functionScript\WoodBaseFun.cs" />
+    <Compile Include="functionScript\WaterBaseFun.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
