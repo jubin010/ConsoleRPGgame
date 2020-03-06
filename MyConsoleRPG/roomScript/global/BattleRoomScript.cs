@@ -161,6 +161,10 @@ namespace MyConsoleRPG
             OutRoom = null;
             Result = false;
             Round = 0;
+            Energy = 0;
+            EEnergy = 0;
+            PShield = 0;
+            EShield = 0;
         }
 
         private void GetBattleDate()
