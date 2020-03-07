@@ -44,7 +44,7 @@ namespace MyConsoleRPG
             MapScripts.Add(typeof(StartMapScript).Name, new StartMapScript());
             MapScripts.Add(typeof(SwordSouthValleyMapScript).Name, new SwordSouthValleyMapScript());
             MapScripts.Add(typeof(SouthValleyMazeScript).Name, new SouthValleyMazeScript());
-
+            MapScripts.Add(typeof(TestMapScript).Name, new TestMapScript());
         }
 
         public override void Runing()

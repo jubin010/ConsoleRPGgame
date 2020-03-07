@@ -80,6 +80,7 @@
     <Compile Include="JsonHelper.cs" />
     <Compile Include="mapScript\globle\GoWhereScript.cs" />
     <Compile Include="mapScript\globle\MazeMapScript.cs" />
+    <Compile Include="mapScript\map\TestMapScript.cs" />
     <Compile Include="mapScript\tile\MazeDoorSit.cs" />
     <Compile Include="mapScript\tile\MazeDownDoor.cs" />
     <Compile Include="mapScript\tile\MazeLeftDoor.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="mapScript\tile\QuestBaseTile.cs" />
     <Compile Include="mapScript\tile\StartMapDoorTile.cs" />
     <Compile Include="mapScript\tile\TestBattleTile.cs" />
+    <Compile Include="mapScript\tile\TestMapDoorTile.cs" />
     <Compile Include="questScript\GameQuest.cs" />
     <Compile Include="questScript\QuestGroup.cs" />
     <Compile Include="questScript\QuestKill.cs" />

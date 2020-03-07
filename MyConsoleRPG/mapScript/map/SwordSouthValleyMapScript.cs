@@ -25,7 +25,7 @@ namespace MyConsoleRPG
                 { '、','、','、','、','、','、','、','、','、','、' ,'、','、','、','、','、','、','、','、','、'},
                 { '、','、','、','、','、','、','迷','、','、','、' ,'、','、','、','、','、','、','、','、','、'},
                 { '、','、','、','、','、','、','、','、','、','、' ,'、','、','、','、','、','、','、','、','、'},
-                { '、','、','、','、','、','、','、','、','、','、' ,'、','、','、','、','、','、','、','、','、'},
+                { '、','、','、','、','、','、','、','、','、','、' ,'、','、','、','、','、','、','、','、','门'},
 
              };
             StarX = 1;
@@ -46,7 +46,7 @@ namespace MyConsoleRPG
 
             Tiles.Add(new QuestBaseTile());//5
 
-
+            Tiles.Add(new TestMapDoorTile());//6
 
 
             TileToMap = new MapTile[,]
@@ -63,7 +63,7 @@ namespace MyConsoleRPG
                 { null,null,null,null,null,null,null,null,null,null ,null,null,null,null,null,null,null,null,null},
                 { null,null,null,null,null,null,Tiles[4],null,null,null ,null,null,null,null,null,null,null,null,null},
                 { null,null,null,null,null,null,null,null,null,null ,null,null,null,null,null,null,null,null,null},
-                { null,null,null,null,null,null,null,null,null,null ,null,null,null,null,null,null,null,null,null},
+                { null,null,null,null,null,null,null,null,null,null ,null,null,null,null,null,null,null,null,Tiles[6]},
 
              };
 
