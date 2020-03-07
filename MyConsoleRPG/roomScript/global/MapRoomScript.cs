@@ -66,9 +66,6 @@ namespace MyConsoleRPG
 
             int start = Console.CursorTop;
             DrawMap();
-            Console.WriteLine();
-            
-            
             KeyToControl(start);
         }
 
