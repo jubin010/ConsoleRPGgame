@@ -418,11 +418,13 @@ namespace MyConsoleRPG
                 Console.WriteLine();
                 Console.WriteLine("修行之路本逆天，半道而亡亦寻常");
                 Console.WriteLine();
-                Console.WriteLine("按\"A\"返回开始界面");
+                Console.WriteLine("按\"{0}\"返回开始界面",Controller.ControllerKeys[Controller.KeyName.BackKey]);
                 OutRoom = GameMainRecycle.RoomScripts.Group[typeof(StartRoomScript).Name];
-                while (Console.ReadKey(true).Key.ToString() != "A")
+                while (true)
                 {
-
+                    Controller.KeyName key = Controller.ReadKeyDown();
+                    if (key == Controller.KeyName.BackKey)
+                        break;
                 }
             }
             else if (PHp == 0)
@@ -431,17 +433,19 @@ namespace MyConsoleRPG
                 Console.WriteLine();
                 Console.WriteLine("修行之路本逆天，半道而亡亦寻常");
                 Console.WriteLine();
-                Console.WriteLine("按\"A\"返回开始界面");
+                Console.WriteLine("按\"{0}\"返回开始界面", Controller.ControllerKeys[Controller.KeyName.BackKey]);
                 OutRoom = GameMainRecycle.RoomScripts.Group[typeof(StartRoomScript).Name];
-                while (Console.ReadKey(true).Key.ToString() != "A")
+                while (true)
                 {
-
+                    Controller.KeyName key = Controller.ReadKeyDown();
+                    if (key == Controller.KeyName.BackKey)
+                        break;
                 }
             }
             else
             {
                 Console.WriteLine("你击败了<{0}>获得胜利", Enemy.Name);
-                Console.WriteLine("按\"A\"取得战利品");
+                Console.WriteLine("按\"{0}\"取得战利品", Controller.ControllerKeys[Controller.KeyName.EnterKey]);
                 OutRoom = LastRoom;
                 LastRoom.RetureRoom = true;
                 if(OutRoom.GetType() == typeof(MapRoomScript))
@@ -454,9 +458,11 @@ namespace MyConsoleRPG
                     }
          
                 }
-                while (Console.ReadKey(true).Key.ToString() != "A")
+                while (true)
                 {
-
+                    Controller.KeyName key = Controller.ReadKeyDown();
+                    if (key == Controller.KeyName.EnterKey)
+                        break;
                 }
                 GetInverntory();
                 UpDateQuest();
@@ -497,11 +503,11 @@ namespace MyConsoleRPG
             PrintUnitData();
             Console.Write(RoundResult.ToString());
             Console.WriteLine();
-            Console.WriteLine("敌方回合结束(A)或(左方向键)继续");
+            Console.WriteLine("敌方回合结束({0})继续",Controller.ControllerKeys[Controller.KeyName.BackKey]);
             while (true)
             {
-                ConsoleKey key = Console.ReadKey(true).Key;
-                if (key == ConsoleKey.A || key == ConsoleKey.LeftArrow)
+                Controller.KeyName key = Controller.ReadKeyDown();
+                if (key == Controller.KeyName.BackKey)
                 {
                     RoundResult.Clear();
                     break;
@@ -540,11 +546,11 @@ namespace MyConsoleRPG
             PrintUnitData();
             Console.Write(RoundResult.ToString());
             Console.WriteLine();
-            Console.WriteLine("玩家回合结束(A)或(左方向键)退出");
+            Console.WriteLine("玩家回合结束按({0})退出",Controller.ControllerKeys[Controller.KeyName.BackKey]);
             while (true)
             {
-                ConsoleKey key = Console.ReadKey(true).Key;
-                if (key == ConsoleKey.A || key == ConsoleKey.LeftArrow)
+                Controller.KeyName key = Controller.ReadKeyDown();
+                if (key == Controller.KeyName.BackKey)
                 {
                     RoundResult.Clear();
                     break;
@@ -649,36 +655,33 @@ namespace MyConsoleRPG
                 Console.SetCursorPosition(20, line);
                 Console.Write("描述:                           ");
             }
-            ConsoleKey key = Console.ReadKey(true).Key;
+            Controller.KeyName key = Controller.ReadKeyDown();
             Console.SetCursorPosition(0, SelectIndex + 1 + line);
             Console.Write("  ");
             switch (key)
             {
-                case ConsoleKey.S:
-                case ConsoleKey.DownArrow:
-                    SelectIndex += 1;
-                    break;
-                case ConsoleKey.W:
-                case ConsoleKey.UpArrow:
+                case Controller.KeyName.UpKey:
                     SelectIndex -= 1;
                     break;
-                case ConsoleKey.D:
-                case ConsoleKey.RightArrow:
+                case Controller.KeyName.DownKey:
+                    SelectIndex += 1;
+                    break;
+                case Controller.KeyName.RightKey:
+                case Controller.KeyName.EnterKey:
                     goOut = PlayOneCard();
                     if (PHp <= 0 || EHp <= 0)
                     {
                         Result = true;
-
                     }
                     break;
-                case ConsoleKey.A:
-                case ConsoleKey.LeftArrow:
+                case Controller.KeyName.LeftKey:
+                case Controller.KeyName.BackKey:
                     AutoPlayCardPlayer();
                     HandCardGroup.Clear();
                     goOut = true;
                     break;
-
-
+                case Controller.KeyName.MenuKey:
+                    break;
             }
             if (SelectIndex >= HandCardGroup.Count - 1)
             {
@@ -823,11 +826,11 @@ namespace MyConsoleRPG
                 PrintUnitData();
                 Console.Write(RoundResult.ToString());
                 Console.WriteLine();
-                Console.WriteLine("(A)或(左方向键)继续");
+                Console.WriteLine("按({0})继续",Controller.ControllerKeys[Controller.KeyName.BackKey]);
                 while (true)
                 {
-                    ConsoleKey key0 = Console.ReadKey(true).Key;
-                    if (key0 == ConsoleKey.A || key0 == ConsoleKey.LeftArrow)
+                    Controller.KeyName key0 = Controller.ReadKeyDown();
+                    if (key0 == Controller.KeyName.BackKey)
                     {
                         break;
                     }

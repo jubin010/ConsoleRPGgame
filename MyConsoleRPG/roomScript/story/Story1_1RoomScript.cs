@@ -23,9 +23,9 @@ namespace MyConsoleRPG
         {
             //base.SetSelect();
 
-            KeySelects[0] = new KeySelect(ConsoleKey.E, typeof(GameSelectRoom).Name, new StringBuilder().Append("游戏菜单"));
-            KeySelects[1] = new KeySelect(ConsoleKey.M,  new StringBuilder().Append("进入地图"),typeof(SwordSouthValleyMapScript));
-            KeySelects[2] = new KeySelect(ConsoleKey.B, typeof(BattleRoomScript).Name, new StringBuilder().Append("进入战斗"));
+            //KeySelects[0] = new KeySelect(ConsoleKey.E, typeof(GameSelectRoom).Name, new StringBuilder().Append("游戏菜单"));
+            KeySelects[1] = new KeySelect(Controller.KeyName.EnterKey,  new StringBuilder().Append("进入地图"),typeof(SwordSouthValleyMapScript));
+            KeySelects[2] = new KeySelect(Controller.KeyName.BackKey, typeof(BattleRoomScript).Name, new StringBuilder().Append("进入战斗"));
         }
 
         public void Text()

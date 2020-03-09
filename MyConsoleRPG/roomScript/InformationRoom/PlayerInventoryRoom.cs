@@ -62,36 +62,35 @@ namespace MyConsoleRPG
                 Console.SetCursorPosition(0, 0);
                 Console.SetCursorPosition(0, SelectIndex + 1 + line);
                 Console.Write("=>");
-                ConsoleKey key = Console.ReadKey(true).Key;
+                Controller.KeyName key = Controller.ReadKeyDown();
                 Console.SetCursorPosition(0, SelectIndex + 1 +line);
                 Console.Write("  ");
                 switch (key)
                 {
-                    case ConsoleKey.S:
-                    case ConsoleKey.DownArrow:
-                        SelectIndex += 1;
-                        break;
-                    case ConsoleKey.W:
-                    case ConsoleKey.UpArrow:
+                    case Controller.KeyName.UpKey:
                         SelectIndex -= 1;
                         break;
-                    case ConsoleKey.D:
-                    case ConsoleKey.RightArrow:
+                    case Controller.KeyName.DownKey:
+                        SelectIndex += 1;
+                        break;
+                    case Controller.KeyName.LeftKey:
+                        break;
+                    case Controller.KeyName.RightKey:
+                        break;
+                    case Controller.KeyName.EnterKey:
                         OutRoom = GameMainRecycle.RoomScripts.Group[typeof(InverntoryInfoRoom).Name];
                         InverntoryInfoRoom room = (InverntoryInfoRoom)OutRoom;
                         room.SeeInventory = GameMainRecycle.PlayerInfo.PlayerUnit.Inventorys[SelectIndex];
                         room.LastRoom = this;
                         goOut = true;
                         break;
-                    case ConsoleKey.A:
-                    case ConsoleKey.LeftArrow:
+                    case Controller.KeyName.BackKey:
                         OutRoom = ComeRoom;
                         OutRoom.RetureRoom = true;
                         goOut = true;
                         break;
-                   
-
-
+                    case Controller.KeyName.MenuKey:
+                        break;
                 }
                 if (SelectIndex >= GameMainRecycle.PlayerInfo.PlayerUnit.Inventorys.Count - 1)
                 {
@@ -101,14 +100,13 @@ namespace MyConsoleRPG
                 {
                     SelectIndex = 0;
                 }
-
             }
-            Console.WriteLine("物品栏为空按A返回");
+            Console.WriteLine("物品栏为空按<{0}>返回",Controller.ControllerKeys[Controller.KeyName.BackKey]);
             while (GameMainRecycle.PlayerInfo.PlayerUnit.Inventorys.Count == 0)
             {
-                
-                ConsoleKey key = Console.ReadKey(true).Key;
-                if (key == ConsoleKey.A)
+
+                Controller.KeyName key = Controller.ReadKeyDown();
+                if (key == Controller.KeyName.BackKey)
                 {
                     OutRoom = ComeRoom;
                     OutRoom.RetureRoom = true;

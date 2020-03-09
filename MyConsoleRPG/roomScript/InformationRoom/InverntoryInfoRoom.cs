@@ -19,7 +19,7 @@ namespace MyConsoleRPG
         {
             UseText = new StringBuilder();
             //占时这样，加一个去往物品装备使用替换房间的选项，如果物品是可以装备展示的话
-            GoKey = new KeySelect(ConsoleKey.E, typeof(InventorySwitchRoom).Name,UseText);
+            GoKey = new KeySelect(Controller.KeyName.EnterKey, typeof(InventorySwitchRoom).Name,UseText);
         }
 
         

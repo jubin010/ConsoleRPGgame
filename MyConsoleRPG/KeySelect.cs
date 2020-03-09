@@ -18,7 +18,7 @@ namespace MyConsoleRPG
             ToUnit = 3,
         }
         public KeySelectType TheType { get; set; }
-        public ConsoleKey Key { get; set; }
+        public Controller.KeyName Key { get; set; }
         public string ToScript { get; set; }
         public StringBuilder SelectText { get; set; }
 
@@ -26,6 +26,7 @@ namespace MyConsoleRPG
         public StringBuilder SelectTextAll { get; set; }
         public Type ToMapScript { get; set; }
         public GameUnit Unit { get; set; }
+        public int PrintLine { get; set; }//开始打印行数
 
         //创建指向故事类房间的选项实例方法
         /// <summary>
@@ -34,7 +35,7 @@ namespace MyConsoleRPG
         /// <param name="k">按键代号</param>
         /// <param name="s">指向的房间脚本名字</param>
         /// <param name="t">选项介绍文字</param>
-        public KeySelect(ConsoleKey k,string s,StringBuilder t)
+        public KeySelect(Controller.KeyName k,string s,StringBuilder t)
         {
             Key = k;
             SelectText = t;
@@ -50,7 +51,7 @@ namespace MyConsoleRPG
         /// <param name="k">按键代号</param>
         /// <param name="t">选项介绍文字</param>
         /// <param name="m">指向的地图脚本</param>
-        public KeySelect(ConsoleKey k, StringBuilder t,Type m)
+        public KeySelect(Controller.KeyName k, StringBuilder t,Type m)
         {
             Key = k;
             SelectText = t;
@@ -66,7 +67,7 @@ namespace MyConsoleRPG
         /// <param name="k">按键代号</param>
         /// <param name="t">选项介绍</param>
         /// <param name="u">游戏单位实例</param>
-        public KeySelect(ConsoleKey k, StringBuilder t, GameUnit u)
+        public KeySelect(Controller.KeyName k, StringBuilder t, GameUnit u)
         {
             Key = k;
             SelectText = t;
@@ -80,7 +81,15 @@ namespace MyConsoleRPG
         public StringBuilder PrintSelect()
         {
             SelectTextAll.Clear();
-            return SelectTextAll.AppendFormat("({0}) {1}", Key, SelectText);   
+            PrintLine = Console.CursorTop;
+            if( Key != Controller.KeyName.NullKey)
+            {
+                return SelectTextAll.AppendFormat("  ({0}) {1}", Controller.ControllerKeys [Key], SelectText);
+            }
+            else
+            {
+                return SelectTextAll.AppendFormat("  {0}",SelectText);
+            }
         }
     }
 }

@@ -48,6 +48,7 @@ namespace MyConsoleRPG
 
         private void RunLoad()
         {
+            Controller.LoadKeySet();
             Skills = new SkillGroup();
             Cards = new CardGroup();
             Inventorys = new InventoryGroup();

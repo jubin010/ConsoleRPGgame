@@ -70,7 +70,7 @@ namespace MyConsoleRPG
         /// </summary>
         public virtual void SetSelect()
         {
-            KeySelects[KeySelects.Length - 1] = new KeySelect(ConsoleKey.Q, typeof(EndRoomScript).Name,new StringBuilder().Append( "退出游戏"));
+            KeySelects[KeySelects.Length - 1] = new KeySelect(Controller.KeyName.BackKey, typeof(NoSaveEndRoomScript).Name,new StringBuilder().Append( "退出游戏"));
         }
        
 

@@ -35,7 +35,7 @@ namespace MyConsoleRPG
         public override void SetSelect()
         {
             
-            KeySelects[0] = new KeySelect(ConsoleKey.A, GetType() .Name, new StringBuilder().Append("返回"));
+            KeySelects[0] = new KeySelect(Controller.KeyName.BackKey, GetType() .Name, new StringBuilder().Append("返回"));
         }
     }
 }

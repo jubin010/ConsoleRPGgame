@@ -65,6 +65,7 @@
     <Compile Include="battleScript\skill\PlayCard.cs" />
     <Compile Include="battleScript\card\LingSwordAtkCard.cs" />
     <Compile Include="battleScript\card\GiveShieldCard.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="inventoryScript\funbook\SwordShieldFunBook.cs" />
     <Compile Include="inventoryScript\globle\FunBook.cs" />
     <Compile Include="inventoryScript\globle\InventoryGroup.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="questScript\TestQuest2.cs" />
     <Compile Include="questScript\TestQuest3.cs" />
     <Compile Include="roomScript\global\NewGameRoomScript.cs" />
+    <Compile Include="roomScript\global\NoSaveEndRoomScript.cs" />
     <Compile Include="roomScript\global\OldGameRoomScript.cs" />
     <Compile Include="roomScript\InformationRoom\QuestShopRoomScript.cs" />
     <Compile Include="roomScript\InformationRoom\GameSelectRoom.cs" />

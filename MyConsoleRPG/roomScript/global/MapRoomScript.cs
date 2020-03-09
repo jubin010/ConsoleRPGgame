@@ -60,8 +60,8 @@ namespace MyConsoleRPG
             Console.WriteLine("你来到 <{0}>", Script.MapName);
             Console.WriteLine("生命:{0}/{1}",GameMainRecycle.PlayerInfo.PlayerUnit.UnitHp, GameMainRecycle.PlayerInfo.PlayerUnit.UnitMaxHp);
             Console.WriteLine();
-            Console.WriteLine("按 <上><下><左><右>或<W><S><A><D> 键来移动主角<你>");
-            Console.WriteLine("向对应物体移动以查看物体相应信息,按 <E>进入游戏菜单");
+            Console.WriteLine("按 <{0}><{1}><{2}><{3}>键来移动主角<你>",Controller.ControllerKeys[Controller.KeyName.UpKey], Controller.ControllerKeys[Controller.KeyName.DownKey], Controller.ControllerKeys[Controller.KeyName.LeftKey], Controller.ControllerKeys[Controller.KeyName.RightKey]);
+            Console.WriteLine("向对应物体移动以查看物体相应信息,按 <{0}>进入游戏菜单", Controller.ControllerKeys[Controller.KeyName.MenuKey]);
             Console.WriteLine();
 
             int start = Console.CursorTop;
@@ -75,94 +75,85 @@ namespace MyConsoleRPG
         /// <param name="start">地图初始绘制行号</param>
         private void KeyToControl(int start)
         {
-            while (true)
+            bool goOut = false;
+            while (!goOut)
             {
-                ConsoleKey kk = Console.ReadKey(true).Key;
                 //方向移动主角方法，不能移动的地块尝试出发其事件
-                if (kk == ConsoleKey.W || kk == ConsoleKey.UpArrow)
+                Controller.KeyName kkk = Controller.ReadKeyDown();
+                switch (kkk)
                 {
-                    if (Y - 1 >= 0)
-                    {
-                        if (Script.NowMapChar[Y - 1, X] == '、')
+                    case Controller.KeyName.UpKey:
+                        if (Y - 1 >= 0)
                         {
-                            UpdateTile(start, 0, -1);
+                            if (Script.NowMapChar[Y - 1, X] == '、')
+                            {
+                                UpdateTile(start, 0, -1);
+                            }
+                            else
+                            {
+                                SeeX = X;
+                                SeeY = Y - 1;
+                                Script.TileToMap[SeeY, SeeX].TileEvent();
+                                goOut = true;
+                            }
                         }
-                        else
+                        break;
+                    case Controller.KeyName.DownKey:
+                        if (Y + 1 <= Script.NowMapChar.GetLength(0) - 1)
                         {
-                            SeeX = X;
-                            SeeY = Y - 1;
-                            Script.TileToMap[SeeY, SeeX].TileEvent();
-
-
-                            break;
+                            if (Script.NowMapChar[Y + 1, X] == '、')
+                            {
+                                UpdateTile(start, 0, 1);
+                            }
+                            else
+                            {
+                                SeeX = X;
+                                SeeY = Y + 1;
+                                Script.TileToMap[SeeY, SeeX].TileEvent();
+                                goOut = true;
+                            }
                         }
-                    }
-
-
-                }
-                else if (kk == ConsoleKey.A || kk == ConsoleKey.LeftArrow)
-                {
-                    if (X - 1 >= 0)
-                    {
-                        if (Script.NowMapChar[Y, X - 1] == '、')
+                        break;
+                    case Controller.KeyName.LeftKey:
+                        if (X - 1 >= 0)
                         {
-                            UpdateTile(start, -1, 0);
+                            if (Script.NowMapChar[Y, X - 1] == '、')
+                            {
+                                UpdateTile(start, -1, 0);
+                            }
+                            else
+                            {
+                                SeeX = X - 1;
+                                SeeY = Y;
+                                Script.TileToMap[SeeY, SeeX].TileEvent();
+                                goOut = true;
+                            }
                         }
-                        else
+                        break;
+                    case Controller.KeyName.RightKey:
+                        if (X + 1 <= Script.NowMapChar.GetLength(1) - 1)
                         {
-                            SeeX = X-1;
-                            SeeY = Y;
-                            Script.TileToMap[SeeY, SeeX].TileEvent();
-                            
-                            break;
+                            if (Script.NowMapChar[Y, X + 1] == '、')
+                            {
+                                UpdateTile(start, 1, 0);
+                            }
+                            else
+                            {
+                                SeeX = X + 1;
+                                SeeY = Y;
+                                Script.TileToMap[SeeY, SeeX].TileEvent();
+                                goOut = true;
+                            }
                         }
-                    }
-
-                }
-                else if (kk == ConsoleKey.S || kk == ConsoleKey.DownArrow)
-                {
-                    if (Y + 1 <= Script.NowMapChar.GetLength(0) - 1)
-                    {
-                        if (Script.NowMapChar[Y + 1, X] == '、')
-                        {
-                            UpdateTile(start, 0, 1);
-                        }
-                        else
-                        {
-                            SeeX = X;
-                            SeeY = Y + 1;
-                            Script.TileToMap[SeeY, SeeX].TileEvent();
-                            
-                            break;
-                        }
-                    }
-
-                }
-                else if (kk == ConsoleKey.D || kk == ConsoleKey.RightArrow)
-                {
-                    if (X + 1 <= Script.NowMapChar.GetLength(1) - 1)
-                    {
-                        if (Script.NowMapChar[Y, X + 1] == '、')
-                        {
-                            UpdateTile(start, 1, 0);
-                        }
-                        else
-                        {
-                            SeeX = X+1;
-                            SeeY = Y;
-                            Script.TileToMap[SeeY, SeeX].TileEvent();
-                            
-                            break;
-                        }
-                    }
-                }
-
-
-                if (kk == ConsoleKey.E)
-                {
-                    OutRoom = GameMainRecycle.RoomScripts.Group[typeof(GameSelectRoom).Name];
-                    break;
-
+                        break;
+                    case Controller.KeyName.EnterKey:
+                        break;
+                    case Controller.KeyName.BackKey:
+                        break;
+                    case Controller.KeyName.MenuKey:
+                        OutRoom = GameMainRecycle.RoomScripts.Group[typeof(GameSelectRoom).Name];
+                        goOut = true;
+                        break;
                 }
                 Console.CursorTop = 0;
                 Console.CursorLeft = 0;

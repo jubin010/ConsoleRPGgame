@@ -25,7 +25,7 @@ namespace MyConsoleRPG
         {
             GoWhere = typeof(StartMapScript);
             //增加了前往的选项
-            KeySelects[1] = new KeySelect(ConsoleKey.S,new StringBuilder().Append("前往"),GoWhere);
+            KeySelects[1] = new KeySelect(Controller.KeyName.EnterKey,new StringBuilder().Append("前往"),GoWhere);
         }
     }
 }

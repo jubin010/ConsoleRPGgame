@@ -13,7 +13,7 @@ namespace MyConsoleRPG
         public KeySelect GoStarRoom { get; set; }
         public OldGameRoomScript()
         {
-            GoStarRoom = new KeySelect(System.ConsoleKey.A, typeof(StartRoomScript).Name, new System.Text.StringBuilder().Append("没有存档，请按A返回开始房间新建游戏"));
+            GoStarRoom = new KeySelect(Controller.KeyName.BackKey, typeof(StartRoomScript).Name, new StringBuilder().AppendFormat  ("没有存档，请按{0}返回开始房间新建游戏",Controller.ControllerKeys[Controller.KeyName.BackKey].ToString()));
         }
 
         public override void OutRuning()

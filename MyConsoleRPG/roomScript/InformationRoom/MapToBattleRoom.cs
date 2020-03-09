@@ -16,8 +16,8 @@ namespace MyConsoleRPG
 
         public MapToBattleRoom()
         {
-            KeySelects[1] = new KeySelect(ConsoleKey.S, typeof(BattleRoomScript).Name,new StringBuilder().Append("进入战斗"));
-            KeySelects[2] = new KeySelect(ConsoleKey.E, new StringBuilder().Append("查看敌人信息"),Enemy);
+            KeySelects[1] = new KeySelect(Controller.KeyName.NullKey, typeof(BattleRoomScript).Name,new StringBuilder().Append("进入战斗"));
+            KeySelects[2] = new KeySelect(Controller.KeyName.NullKey, new StringBuilder().Append("查看敌人信息"),Enemy);
         }
         public override void Runing()
         {

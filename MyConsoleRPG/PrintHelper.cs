@@ -37,26 +37,29 @@ namespace MyConsoleRPG
             {
                 Console.SetCursorPosition(0, SelectIndex  + line);
                 Console.Write("=>");
-                ConsoleKey key = Console.ReadKey(true).Key;
+                Controller.KeyName key = Controller.ReadKeyDown();
                 Console.SetCursorPosition(0, SelectIndex  + line);
                 Console.Write("  ");
                 switch (key)
                 {
-                    case ConsoleKey.S:
-                    case ConsoleKey.DownArrow:
-                        SelectIndex += 1;
-                        break;
-                    case ConsoleKey.W:
-                    case ConsoleKey.UpArrow:
+                    case Controller.KeyName.UpKey:
                         SelectIndex -= 1;
                         break;
-                    case ConsoleKey.D:
-                    case ConsoleKey.RightArrow:
+                    case Controller.KeyName.DownKey:
+                        SelectIndex += 1;
+                        break;
+                    case Controller.KeyName.LeftKey:
+                        break;
+                    case Controller.KeyName.RightKey:
+                        //goOut = true;
+                        break;
+                    case Controller.KeyName.EnterKey:
                         goOut = true;
                         break;
-                    case ConsoleKey.A:
-                    case ConsoleKey.LeftArrow:
+                    case Controller.KeyName.BackKey:
                         return 999;
+                    case Controller.KeyName.MenuKey:
+                        break;
                 }
                 if (SelectIndex >= array.Count - 1)
                 {
@@ -66,7 +69,6 @@ namespace MyConsoleRPG
                 {
                     SelectIndex = 0;
                 }
-
             }
             return SelectIndex;
         }
