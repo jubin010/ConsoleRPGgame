@@ -30,7 +30,8 @@ namespace MyConsoleRPG
                 {typeof(MapToBattleRoom).Name,new MapToBattleRoom() },
                  {typeof(OutMazeRoomScript).Name,new OutMazeRoomScript() },
                  {typeof(QuestInfoRoomScript).Name,new QuestInfoRoomScript() },
-                {typeof(QuestShopRoomScript).Name,new QuestShopRoomScript() }
+                {typeof(QuestShopRoomScript).Name,new QuestShopRoomScript() },
+                {typeof(ControllerSetRoomScript).Name,new ControllerSetRoomScript() }
             };
         }
     }

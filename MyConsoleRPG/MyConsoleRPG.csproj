@@ -99,6 +99,7 @@
     <Compile Include="questScript\TestQuest.cs" />
     <Compile Include="questScript\TestQuest2.cs" />
     <Compile Include="questScript\TestQuest3.cs" />
+    <Compile Include="roomScript\global\ControllerSetRoomScript.cs" />
     <Compile Include="roomScript\global\NewGameRoomScript.cs" />
     <Compile Include="roomScript\global\NoSaveEndRoomScript.cs" />
     <Compile Include="roomScript\global\OldGameRoomScript.cs" />
