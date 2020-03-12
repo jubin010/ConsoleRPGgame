@@ -36,7 +36,7 @@ namespace MyConsoleRPG
             while (array.Count > 0 && goOut == false)
             {
                 Console.SetCursorPosition(0, SelectIndex  + line);
-                Console.Write("=>");
+                PrintHelper.PrintWriteColor("=>", ConsoleColor.Red);
                 Controller.KeyName key = Controller.ReadKeyDown();
                 Console.SetCursorPosition(0, SelectIndex  + line);
                 Console.Write("  ");
@@ -75,48 +75,41 @@ namespace MyConsoleRPG
 
         public static void PrintStoryText(StringBuilder storyText, int LineLength)
         {
-            char[] charsInLine = new char[LineLength];
-            int lineStartIndex = 0;
-
-            while (lineStartIndex <= storyText.Length)
+            char[] chars = new char[storyText.Length];
+            int charIndex = 0;
+            storyText.CopyTo(0, chars, 0, storyText.Length);
+            for (int ii = 0; ii <chars.Length; ii++)
             {
-
-
-                while (true)
+                if (chars[ii] == '\n')
                 {
-                    int kk = storyText.Length - lineStartIndex > LineLength ? LineLength : storyText.Length - lineStartIndex;
-                    Array.Clear(charsInLine, 0, charsInLine.Length);
-                    storyText.CopyTo(lineStartIndex, charsInLine, 0, kk);
-                    int kkk = PrintOneLine(charsInLine);
-                    if (kkk >= charsInLine.Length - 1)
-                    {
-                        break;
+                    Console.Write(chars[ii]);
+                    Console.WriteLine();
+                    if (chars.Length - 1 == ii)
+                    { 
+                        return;
                     }
-                    lineStartIndex += kkk + 1;
+                    Console.Write("  ");
+                    continue;
                 }
-
-                lineStartIndex += LineLength;
-            }
-
-
-        }
-
-        private static int PrintOneLine(char[] charsInLine)
-        {
-            for (int i = 0; i < charsInLine.Length; i++)
-            {
-                Console.Write(charsInLine[i]);
-                if (charsInLine[i] == '\n')
+                Console.Write(chars[ii]);
+                charIndex = Console.CursorLeft;
+                if (chars.Length - 1 <= ii)
                 {
-                    return i;
+                    Console.WriteLine();
+                    return;
                 }
-                if (i == charsInLine.Length - 1)
+                if (charIndex+1 > 2 * LineLength)
                 {
+                    if (chars[ii + 1] == '\n')
+                    {
+                        continue;
+                    }
                     Console.WriteLine();
                 }
             }
-            return charsInLine.Length - 1;
         }
+
+        
 
         //打印具备颜色的字符串
         public static void PrintWriteColor(string s,ConsoleColor c)

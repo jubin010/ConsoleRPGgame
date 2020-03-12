@@ -25,8 +25,8 @@ namespace MyConsoleRPG
             {
                 _questText = string.Format
                     (@"[{0}]
-  {1}
-                    ", Name, Describe);
+{1}
+", Name, Describe);
                 return _questText;
             }
             private set => _questText = value;

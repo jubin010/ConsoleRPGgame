@@ -108,6 +108,7 @@
     <Compile Include="roomScript\InformationRoom\MapToBattleRoom.cs" />
     <Compile Include="roomScript\InformationRoom\OutMazeRoomScript.cs" />
     <Compile Include="roomScript\InformationRoom\QuestInfoRoomScript.cs" />
+    <Compile Include="roomScript\story\StoryRoomScript.cs" />
     <Compile Include="ShuffleHelper.cs" />
     <Compile Include="unitScript\NpcUnitGroup.cs" />
     <Compile Include="Quality.cs" />
@@ -147,7 +148,6 @@
     <Compile Include="roomScript\global\RoomScript.cs" />
     <Compile Include="roomScript\global\RoomScriptGroup.cs" />
     <Compile Include="roomScript\global\StartRoomScript.cs" />
-    <Compile Include="roomScript\story\Story1_1RoomScript.cs" />
     <Compile Include="mapScript\tile\SouthernDoorTile.cs" />
     <Compile Include="mapScript\tile\SouthernForestTile.cs" />
     <Compile Include="mapScript\tile\SouthernSteleTile.cs" />

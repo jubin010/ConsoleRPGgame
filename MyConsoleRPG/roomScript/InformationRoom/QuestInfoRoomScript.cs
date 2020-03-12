@@ -26,9 +26,9 @@ namespace MyConsoleRPG
             if (pq != null)
             {
                 if(pq.IsComplete)
-                    GameMainRecycle.InfoText =string.Format("{0}\r\n状态：已完成 ",  pq.QuestText);
+                    GameMainRecycle.InfoText =string.Format("{0}状态：已完成 ",  pq.QuestText);
                 else
-                    GameMainRecycle.InfoText = string.Format("{0}\r\n状态：未完成 ", pq.QuestText);
+                    GameMainRecycle.InfoText = string.Format("{0}状态：未完成 ", pq.QuestText);
             }
             else
             {

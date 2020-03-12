@@ -17,7 +17,7 @@ namespace MyConsoleRPG
                 {typeof(OldGameRoomScript).Name,new OldGameRoomScript() },
                 { typeof(EndRoomScript).Name, new EndRoomScript() },
                 { typeof(NoSaveEndRoomScript).Name, new NoSaveEndRoomScript() },
-                { typeof(Story1_1RoomScript).Name, new Story1_1RoomScript() },
+                { typeof(StoryRoomScript).Name, new StoryRoomScript() },
                 { typeof(InformationRoomScript).Name, new InformationRoomScript() },
                 {typeof(MapRoomScript).Name,new MapRoomScript() },
                 {typeof(MapMoveRoomScript).Name,new MapMoveRoomScript() },

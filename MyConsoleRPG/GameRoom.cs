@@ -73,7 +73,8 @@ namespace MyConsoleRPG
             int selectIndex = 0;
             Console.CursorTop = ActivitySelects[selectIndex].PrintLine;
             Console.CursorLeft = 0;
-            Console.Write("=>");
+            PrintHelper.PrintWriteColor("=>",ConsoleColor.Red);    //Console.Write();
+            Console.SetCursorPosition(0, 0);
             while (true)
             {
                 Controller.KeyName kk = Controller.ReadKeyDown();
@@ -116,7 +117,7 @@ namespace MyConsoleRPG
                     selectIndex = ActivitySelects.Count - 1;
                 Console.CursorTop = ActivitySelects[selectIndex].PrintLine;
                 Console.CursorLeft = 0;
-                Console.Write("=>");
+                PrintHelper.PrintWriteColor("=>", ConsoleColor.Red);
             }
             
         }
