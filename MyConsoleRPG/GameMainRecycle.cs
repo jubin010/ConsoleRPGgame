@@ -11,6 +11,12 @@ namespace MyConsoleRPG
     /// </summary>
     class GameMainRecycle
     {
+    
+
+        
+        
+
+
         public static bool OutGame { get; set; }
         private bool LoadDone;
 
@@ -38,7 +44,12 @@ namespace MyConsoleRPG
         //玩家游戏信息
         public static PlayerInformation PlayerInfo { get; set; }
 
-        public GameMainRecycle()
+
+        /// <summary>
+        /// 单例
+        /// </summary>
+        public static readonly GameMainRecycle game = new GameMainRecycle();
+        private GameMainRecycle()
         {
             OutGame = false;
             LoadDone = false;

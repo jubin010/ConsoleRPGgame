@@ -10,9 +10,8 @@ namespace MyConsoleRPG
     {
         static void Main(string[] args)
         {
-            GameMainRecycle runGame = new GameMainRecycle();
             //调用游戏主循环方法
-            runGame.RunRecycle();
+            GameMainRecycle.game.RunRecycle();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyConsoleRPG
 {
-    class MazeTile:MapTile
+    class MazeTile:MapTile,IEventTile
     {
         public MazeTile()
         {
@@ -15,5 +15,12 @@ namespace MyConsoleRPG
             TileText = "进入南林秘境";
         }
 
+        public void SpecialEvents()
+        {
+            Console.Clear();
+            Console.ReadKey();
+        }
+
+        
     }
 }

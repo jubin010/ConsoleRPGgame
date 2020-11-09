@@ -80,6 +80,7 @@
     <Compile Include="inventoryScript\resource\Wolfskin.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="mapScript\globle\GoWhereScript.cs" />
+    <Compile Include="mapScript\globle\IEventTile.cs" />
     <Compile Include="mapScript\globle\MazeMapScript.cs" />
     <Compile Include="mapScript\map\TestMapScript.cs" />
     <Compile Include="mapScript\tile\MazeDoorSit.cs" />

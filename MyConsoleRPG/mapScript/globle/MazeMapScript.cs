@@ -22,5 +22,7 @@ namespace MyConsoleRPG
             Tiles.Add(new MazeRightDoor());
             Tiles.Add(new MazeDoorSit());
         }
+
+       
     }
 }

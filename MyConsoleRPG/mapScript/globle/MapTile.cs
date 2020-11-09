@@ -66,6 +66,12 @@ namespace MyConsoleRPG
         public virtual void TileEvent()
         {
             MapRoom =(MapRoomScript) GameMainRecycle.RoomScripts.Group[typeof(MapRoomScript).Name];
+            //图块特有事件
+            if (this is IEventTile e)
+            {
+                e.SpecialEvents();
+            }
+           
             switch (TileType)
             {
                 case TileTypes.info:
@@ -92,8 +98,8 @@ namespace MyConsoleRPG
                     InWhere.StarX = GoWhere.NextStarX;
                     InWhere.StarY = GoWhere.NextStarY;
                     MapRoom.ReLoad();
-                    GetAndShuffleNullTile();
-                    AddRandomTile(20);
+                    GetAndShuffleNullTile(InWhere);
+                    AddRandomTile(20,InWhere);
                     break;
                 case TileTypes.quest:
                     GoRoom = typeof(QuestShopRoomScript).Name;
@@ -104,6 +110,9 @@ namespace MyConsoleRPG
                     break;
             }
 
+            
+
+
             //图块出发后由地图房间会去往的房间
             MapRoom.OutRoom 
                 = GameMainRecycle.RoomScripts.Group[GoRoom];
@@ -113,21 +122,23 @@ namespace MyConsoleRPG
                 
         }
 
-        private void AddRandomTile(int cont)
+       
+
+        public  void AddRandomTile(int cont,MapScript where)
         {
             Random random = new Random();
             for (int ii = 0; ii < cont; ii++)
             {
                 int index = random.Next(5, InWhere.Tiles.Count);
-                InWhere.TileToMap[NullTileLocs[ii].TileY, NullTileLocs[ii].TileX] = InWhere.Tiles[index];
-                InWhere.NowMapChar[NullTileLocs[ii].TileY, NullTileLocs[ii].TileX] = InWhere.Tiles[index].TileChar;
+               where.TileToMap[NullTileLocs[ii].TileY, NullTileLocs[ii].TileX] = where.Tiles[index];
+               where.NowMapChar[NullTileLocs[ii].TileY, NullTileLocs[ii].TileX] = where.Tiles[index].TileChar;
             }
         }
 
-        private void GetAndShuffleNullTile()
+        public  void GetAndShuffleNullTile(MapScript where)
         {
             NullTileLocs.Clear();
-            NullTileLocs.AddRange(InWhere.MapNullTileLocs.ToArray());
+            NullTileLocs.AddRange(where.MapNullTileLocs.ToArray());
             ShuffleHelper.ShuffleList(NullTileLocs);
         }
 

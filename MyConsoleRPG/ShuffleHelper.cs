@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace MyConsoleRPG
 {
+
+    interface IShuffleList
+    {
+
+    }
     /// <summary>
     /// list乱序帮助类
     /// </summary>
     static class ShuffleHelper
     {
+       
+
+
         public static void ShuffleList(List<GameUnit> list)
         {
             int len = list.Count;
