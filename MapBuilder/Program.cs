@@ -17,7 +17,7 @@ namespace MapBuilder
 
 
 
-            //string fileName = Console.ReadLine();
+            
             //string MapName = Console.ReadLine();
         }  
     }

@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyConsoleRPG.BasalAtkCard" Collapsed="true">
+    <Position X="0.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\card\BasalAtkCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.BaseSwordAtkCard" Collapsed="true">
+    <Position X="3" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\card\BaseSwordAtkCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GiveShieldCard" Collapsed="true">
+    <Position X="5.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\card\GiveShieldCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.LingSwordAtkCard" Collapsed="true">
+    <Position X="7.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\card\LingSwordAtkCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.ManMadeCard" Collapsed="true">
+    <Position X="9.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\card\ManMadeCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Card" Collapsed="true">
+    <Position X="5.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAACAAAAAgAAAAEAAQAAAgAAAAAAAAAwAAAABA=</HashCode>
+      <FileName>battleScript\global\Card.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyConsoleRPG.CardGroup" Collapsed="true">
+    <Position X="45.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\global\CardGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.CardSave" Collapsed="true">
+    <Position X="47.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABCAAAAAAAAAAAAABgAAAAIAQBAAAAAAAAA=</HashCode>
+      <FileName>battleScript\global\CardSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.CardSkill" Collapsed="true">
+    <Position X="20.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAgAAAEAEIQAAICgAAAAAAAAAAAEiBA=</HashCode>
+      <FileName>battleScript\global\CardSkill.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyConsoleRPG.JsonSkill" Collapsed="true">
+    <Position X="50.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAgAAAAAAAQAAADAAAAAAAAIAAAEiAA=</HashCode>
+      <FileName>battleScript\global\JsonSkill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Perk" Collapsed="true">
+    <Position X="47.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABAAAgAAAAAAAAACAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>battleScript\global\Perk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SkillGroup" Collapsed="true">
+    <Position X="52.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\global\SkillGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.BasalAtk" Collapsed="true">
+    <Position X="15.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\skill\BasalAtk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GetHurt" Collapsed="true">
+    <Position X="18" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>battleScript\skill\GetHurt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GetLing" Collapsed="true">
+    <Position X="20.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACEAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\skill\GetLing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GetShield" Collapsed="true">
+    <Position X="22.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAgAAAAAAAAAAEAA=</HashCode>
+      <FileName>battleScript\skill\GetShield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.PlayCard" Collapsed="true">
+    <Position X="24.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>battleScript\skill\PlayCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Controller" Collapsed="true">
+    <Position X="49" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.FireBaseFun" Collapsed="true">
+    <Position X="7.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>functionScript\FireBaseFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Function" Collapsed="true">
+    <Position X="6.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAQQAAAAAAAABAgAgAAAAAAA=</HashCode>
+      <FileName>functionScript\Function.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GoldBaseFun" Collapsed="true">
+    <Position X="10" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>functionScript\GoldBaseFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SoilBaseFun" Collapsed="true">
+    <Position X="12.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>functionScript\SoilBaseFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SwordShield" Collapsed="true">
+    <Position X="1" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>functionScript\SwordShield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.WaterBaseFun" Collapsed="true">
+    <Position X="3.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>functionScript\WaterBaseFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.WoodBaseFun" Collapsed="true">
+    <Position X="5.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>functionScript\WoodBaseFun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GameMainRecycle" Collapsed="true">
+    <Position X="50.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AEEAABAACAAABAAQBAAAAAIAAAAAAAIAAAAAAAAIAA=</HashCode>
+      <FileName>GameMainRecycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GameRoom" Collapsed="true">
+    <Position X="52.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACEEAAIAAAAAAAAAAAAQAAAEAIAAAAQAAgAAA=</HashCode>
+      <FileName>GameRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SwordShieldFunBook" Collapsed="true">
+    <Position X="24" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\funbook\SwordShieldFunBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Equipment" Collapsed="true">
+    <Position X="18.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\globle\Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.FunBook" Collapsed="true">
+    <Position X="24" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\globle\FunBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Inventory" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>inventoryScript\globle\Inventory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyConsoleRPG.InventoryGroup" Collapsed="true">
+    <Position X="45.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\globle\InventoryGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.InventorySave" Collapsed="true">
+    <Position X="47.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\globle\InventorySave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Resource" Collapsed="true">
+    <Position X="7.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAFAAAAAAAQ=</HashCode>
+      <FileName>inventoryScript\globle\Resource,.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.FireStone" Collapsed="true">
+    <Position X="1.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\resource\stone\FireStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GoldStone" Collapsed="true">
+    <Position X="3.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\resource\stone\GoldStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SoilStone" Collapsed="true">
+    <Position X="6" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\resource\stone\SoilStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.WaterStone" Collapsed="true">
+    <Position X="8.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\resource\stone\WaterStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.WoodStone" Collapsed="true">
+    <Position X="10.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\resource\stone\WoodStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Wolfskin" Collapsed="true">
+    <Position X="12.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\resource\Wolfskin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.BaseWoodOrcCycle" Collapsed="true">
+    <Position X="15" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\weaponScript\BaseWoodOrcCycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.BaseWoodSword" Collapsed="true">
+    <Position X="17.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\weaponScript\BaseWoodSword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.EmptyHanded" Collapsed="true">
+    <Position X="19.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\weaponScript\EmptyHanded.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.ManMadeWeapon" Collapsed="true">
+    <Position X="21.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>inventoryScript\weaponScript\ManMadeWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Weapon" Collapsed="true">
+    <Position X="18.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inventoryScript\weaponScript\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.JsonHelper" Collapsed="true">
+    <Position X="49" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>JsonHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.KeySelect" Collapsed="true">
+    <Position X="52.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAMAACEAQACAAEAAAAAAACAAAAAAA=</HashCode>
+      <FileName>KeySelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MapScript" Collapsed="true">
+    <Position X="16" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAKAAABAAAEAABKAAAAQBAAAAIIAAAAAQAAAAA=</HashCode>
+      <FileName>mapScript\globle\MapScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MapTile" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIBAAwAACAAAAABABAEAiAQAAEEAAABQAAAAA=</HashCode>
+      <FileName>mapScript\globle\MapTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeMapScript" Collapsed="true">
+    <Position X="17.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\globle\MazeMapScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeTile" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\globle\MazeTile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyConsoleRPG.SouthValleyMazeScript" Collapsed="true">
+    <Position X="17.25" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\map\maze\SouthValleyMazeScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.StartMapScript" Collapsed="true">
+    <Position X="19.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\map\StartMapScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SwordSouthValleyMapScript" Collapsed="true">
+    <Position X="12.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\map\SwordSouthValleyMapScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestMapScript" Collapsed="true">
+    <Position X="15" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\map\TestMapScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeDoorSit" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\MazeDoorSit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeDownDoor" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\MazeDownDoor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeLeftDoor" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\MazeLeftDoor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeRightDoor" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\MazeRightDoor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MazeUpDoor" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\MazeUpDoor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.QuestBaseTile" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\QuestBaseTile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyConsoleRPG.SouthernDoorTile" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\SouthernDoorTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SouthernForestTile" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\SouthernForestTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.SouthernSteleTile" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\SouthernSteleTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.StartMapDoorTile" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\StartMapDoorTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestBattleTile" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\TestBattleTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestMapDoorTile" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\tile\TestMapDoorTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.PlayerInformation" Collapsed="true">
+    <Position X="49" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAA=</HashCode>
+      <FileName>PlayerInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.PrintHelper" Collapsed="true">
+    <Position X="50.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAABAQAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>PrintHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.Program" Collapsed="true">
+    <Position X="52.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GameQuest" Collapsed="true">
+    <Position X="3" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAAAAAAgACAAAAASAgAAAAAAAAEAAAAAAABA=</HashCode>
+      <FileName>questScript\GameQuest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyConsoleRPG.QuestGroup" Collapsed="true">
+    <Position X="45.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>questScript\QuestGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.QuestKill" Collapsed="true">
+    <Position X="47.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAQAgAAQAAAAAAAICAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>questScript\QuestKill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestQuest" Collapsed="true">
+    <Position X="5.25" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>questScript\TestQuest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestQuest2" Collapsed="true">
+    <Position X="0.75" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>questScript\TestQuest2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestQuest3" Collapsed="true">
+    <Position X="3" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>questScript\TestQuest3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.BattleRoomScript" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hA8CAgQAACQANAIAKwBGAoQAcAAKChDAAQAQOQMAEQA=</HashCode>
+      <FileName>roomScript\global\BattleRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.ControllerSetRoomScript" Collapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAABAAAAAAAAAABCAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\ControllerSetRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.EndRoomScript" Collapsed="true">
+    <Position X="31.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\EndRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.InventorySwitchRoom" Collapsed="true">
+    <Position X="34" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAAAAABAAAIABAAAAAAA=</HashCode>
+      <FileName>roomScript\global\InventorySwitchRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MapRoomScript" Collapsed="true">
+    <Position X="36.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAQYAAAAAAAAAAAAAABAACAAQAAAhYAA=</HashCode>
+      <FileName>roomScript\global\MapRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.NewGameRoomScript" Collapsed="true">
+    <Position X="38.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\NewGameRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.NoSaveEndRoomScript" Collapsed="true">
+    <Position X="40.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\NoSaveEndRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.OldGameRoomScript" Collapsed="true">
+    <Position X="43" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAAAIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\OldGameRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.RoomScript" Collapsed="true">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQABAAAAAAAAACAAAAABQAAABAAgAAAAAABIAA=</HashCode>
+      <FileName>roomScript\global\RoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.RoomScriptGroup" Collapsed="true">
+    <Position X="49" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\RoomScriptGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.StartRoomScript" Collapsed="true">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\global\StartRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GameSelectRoom" Collapsed="true">
+    <Position X="13.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAQAAABAAAAAAAACAAABAAAAABABAAAAAAoAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\GameSelectRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.InformationRoomScript" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\InformationRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.InverntoryInfoRoom" Collapsed="true">
+    <Position X="16" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAACAAAAAAAAABAAAAACAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\InverntoryInfoRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MapMoveRoomScript" Collapsed="true">
+    <Position X="18.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\MapMoveRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.MapToBattleRoom" Collapsed="true">
+    <Position X="20.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAgAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgA=</HashCode>
+      <FileName>roomScript\InformationRoom\MapToBattleRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.OutMazeRoomScript" Collapsed="true">
+    <Position X="22.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\OutMazeRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.PlayerInventoryRoom" Collapsed="true">
+    <Position X="25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\PlayerInventoryRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.QuestInfoRoomScript" Collapsed="true">
+    <Position X="27.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\QuestInfoRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.QuestShopRoomScript" Collapsed="true">
+    <Position X="29.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACQAAAAgAAAAAAACAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\QuestShopRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.UnitInfoRoom" Collapsed="true">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>roomScript\InformationRoom\UnitInfoRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.StoryRoomScript" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAAAAAAAAAAAAAAAAAAAAAABAAAAAACAAAAAA=</HashCode>
+      <FileName>roomScript\story\StoryRoomScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.ShuffleHelper" Collapsed="true">
+    <Position X="50.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShuffleHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.GameUnit" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUBYAAABACAqABgADBAABYwAAAmABCAAAAAgEgAIgE=</HashCode>
+      <FileName>unitScript\GameUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.TestEnemy" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>unitScript\npc\TestEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.NpcUnitGroup" Collapsed="true">
+    <Position X="45.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>unitScript\NpcUnitGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.PlayerUnit" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>unitScript\PlayerUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.UnitEquipments" Collapsed="true">
+    <Position X="45.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>unitScript\UnitEquipments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyConsoleRPG.UnitFunctions" Collapsed="true">
+    <Position X="47.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgACAAAIAACAAAAAAAAgkAQgACA=</HashCode>
+      <FileName>unitScript\UnitFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="MyConsoleRPG.GoWhereScript" Collapsed="true">
+    <Position X="45.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\globle\GoWhereScript.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="MyConsoleRPG.IEventTile" Collapsed="true">
+    <Position X="45.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mapScript\globle\IEventTile.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyConsoleRPG.IShuffleList" Collapsed="true">
+    <Position X="47.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShuffleHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MyConsoleRPG.Quality" Collapsed="true">
+    <Position X="45.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Quality.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MyConsoleRPG.TheFiveElements" Collapsed="true">
+    <Position X="47.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAQAAAkAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>TheFiveElements.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
